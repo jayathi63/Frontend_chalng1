@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body
+    {
+        background-image: url('./images/pattern-background-desktop.svg');
+        background-repeat: no-repeat;
+        font-family: 'Red Hat Display';
+        text-align: center;
+    }
+    #box
+    {
+        margin: auto;
+        width: 320px;
+        margin-bottom: 30px;
+        margin-top: 40px;
+        border-radius: 10px;
+        padding-bottom: 30px;
+        box-shadow: 0px 3px 20px hsl(224, 23%, 55%);
+        background-color:white;
+        height: 450px;
+    }
+    
+    header
+    {
+        font-weight: 900;
+        margin:15px;
+        font-size:20px;
+        color:hsl(223, 47%, 23%);
+    }
+    #summary
+    {
+        font-size: 16px;
+        font-weight: 500;
+        padding:5px 20px;
+       
+    }
+    #summary,#amount
+    {
+        color:hsl(224, 23%, 55%);
+    }
+    #boyimg
+    {
+        width:inherit;
+        border-radius: 10px 10px 0px 0px;
+    }
+    #plan
+    {
+        font-weight: 700;
+    }
+   #proced-btn
+   {
+       margin:20px;
+       height:40px;
+       border-radius: 10px;
+       padding:5px 60px;
+       font-size:16px;
+       font-weight: 700;
+       background-color: hsl(245, 75%, 52%);
+       color:white;
+       cursor: pointer;
+   }
+   #cancel-link
+   {
+       text-decoration: none;
+       color: hsl(224, 23%, 55%);
+       font-weight: 700;
+
+   }
+    #plan,#change
+    {
+        font-weight: 700;
+    }
+    @media only screen and (max-width: 375px) {
+    body {
+    background-image: url('./images/pattern-background-mobile.svg')
+  }}
+
+  </style>
+</head>
+<body>
+
+  <div id="box">
+    <img id="boyimg" src="./images/illustration-hero.svg">
+    <header id="head">
+        Order Summary
+    </header>
+    <p id="summary">You can now listen to millions of songs, audiobooks, and podcasts on any  device anywhere you like! </p>
+    <table id="box2" align="center">
+        <tr>
+           <td rowspan="2"  width="90" align="left"><img id="icon"  src="./images/icon-music.svg"></td>
+           <td id="plan"> Annual Plan  </td>
+           <td rowspan="2" width="90" align="right"> <a href="#" id="change">Change</a></td>
+        </tr>
+        <tr>
+            <td id="amount"> $59.99/year </td>
+        </tr>
+    </table> 
+    
+        <button id="proced-btn" type="submit"> Proceed to Payment</button> <br>
+    </a>
+    <a href="#" id="cancel-link" >Cancel Order</a>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Jayathi</a>
+  </div>
+</body>
+</html>
